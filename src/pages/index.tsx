@@ -1,7 +1,16 @@
+import styles from '../styles/pages/Home.module.css'
+
+import {SideBar} from "../components/SideBar"
+import Head from "next/head";
 
 export default function Home() {
     return (
-        <h1>Welcome to Pokedex</h1>
+        <div className={styles.container}>
+            <Head>
+                <title>PokeDex</title>
+            </Head>
 
+            <SideBar />
+        </div>
     )
 }
